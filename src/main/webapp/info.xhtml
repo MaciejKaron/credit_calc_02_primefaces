@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/templates/main-template.xhtml">
+
+<ui:define name="title">
+	INFORMACJE
+</ui:define>
+
+<ui:define name="content">
+
+<div class="whiteTxt">
+
+<h1 >Informacje dotyczące działania kalkulatora</h1>
+
+<h3>Kwota pożyczki musi mieścić się w przedziale 1000 - 50 000</h3>
+<h3>Minimalna długość spłacania pożyczki to rok</h3>
+<h3>Minimalne oprocentowanie wynosi 1% natomiast maksymalne 10%</h3>
+
+</div>
+
+<h:form>
+<p:commandLink id="nonAjaxx" ajax="false" action="#{creditBB.index()}" >
+<h:outputText value="POWRÓT"/>
+</p:commandLink>
+</h:form>
+
+</ui:define>
+
+</ui:composition>
+
+</html>
